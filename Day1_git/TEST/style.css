@@ -1,0 +1,65 @@
+.back {
+    width: 100vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-image: url("drink_visual.jpg");
+}
+
+.des {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.drink {
+    font-size: 56px;
+    margin-bottom: 5px;
+}
+
+.greet {
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+.text {
+    color: white;
+}
+
+.menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 32px;
+}
+
+.btn {
+    display: none;
+}
+
+label {
+    padding: 10px 5vw;
+    border: 1px solid #fff;
+
+    font-size: 16px;
+    color: white;
+}
+
+input[type="radio"]:checked + label {
+    background-color: white;
+    color: black;
+}

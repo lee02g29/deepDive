@@ -1,0 +1,78 @@
+git 버전 확인하는 명령어(컴퓨터한테 지시)
+git -v
+
+사용자 정보 저장
+git config --global user.email "이메일 주소"
+git config --global user.name "사용자명"
+
+원격 저장소(github)
+    - git init - 새로운 git 저장소 생성
+    - ls -la - 폴더 구조 확인
+    - clear / cls - 맥 / 윈도우에서 터미널 클린
+    - 원격 저장소 확인 : git remote -v
+    - 원격 저장소 연결(추가) : git remote add origin [원격저장소 url]
+
+github 저장소를 변경
+    - git remote set-url origin [새로운 원격저장소 url]
+    - 
+
+원격 저장소 세부 정보 확인
+    - git remote show origin
+
+error 정리
+    - error : remote origin already exists.
+        - 현재 저장소에 이미 원격 저장소가 이미 설정되어 있음. 이 상태에서 또 추가하려고 하여 발생하는 오류
+
+git add 파일명 (ex. Day2.txt)
+
+git commit
+    - 파일에 변경된 내용을 기록(log)
+    - log --oneline 옵션 :로그, 로그 요약
+
+    변경된 내용만 확인
+    - git diff
+    - git difftool
+    - git difftool 커밋 id 
+    - 변경된 내용을 그림으로 편하게 볼 수 있는 도구 : Git Graph
+- 라이브러리(도구) 
+----
+여러개의 파일에 추가된 내용을 저장할 때
+    - git add 파일명 1 파일명 2 : 여러개의 파일을 동시에 스테이징 할 수 있음
+    - staging ares는 commit을 하기 전에 commit할 파일들을 골라고는 곳
+
+작업 폴더 -> git add -> staging area -> git commit -> 저장소
+
+git add .
+    - 작업 폴더의 모든 파일을 전부 스테이징하고 싶을 때 사용함
+
+뒤로가기 명령어
+    cd ../ - cd 이동, cd : 폴더명
+
+
+git status(git 상태창)
+
+
+ 
+git branch 브랜치이름
+    - 프로젝트 복사본을 만들어서 먼저 거기에서 개발해보기
+    - 파일을 병합하는 merge 3가지
+    - 삭제
+
+git?
+    - 소스 코드의 변경 이력 기록, 여러 개발자가 동시에 같은 프로젝트에서 작업을 할 수 있도록 도와줌
+
+github
+    - git을 기반으로한 클라우드 기반 소스 코드 호스팅 플랫폼
+    - 원격 저장소 관리, 협업, 코드 리뷰, 이슈 관리
+
+Repository 
+    - 프로젝트의 소스코드와 히스토리를 저장하는 공간
+
+Pull Request
+    - 변경 사항을 제안하고, 코드 리뷰 및 병합을 요청하는 기능
+
+
+git 동작하는 과정
+    - 로컬 (내 컴퓨터) 코드 변경 -> add, commit -> push -> 원격 저장소에 반영
+    - 팀원은 pull 명령어를 이용해서 최신 코드를 받아옴
+    - 코드 병합은 merge 또는 rebase를 통해 이루어짐
