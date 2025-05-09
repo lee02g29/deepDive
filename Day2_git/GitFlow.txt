@@ -1,0 +1,15 @@
+    개발시 
+main
+hotfix
+release
+feature 
+4가지로 나누어 개발하고자 합니다.
+
+혼자가 아니라면,
+main
+hotfix
+release
+develop
+feature
+
+다섯 가지로 나눕니다.
