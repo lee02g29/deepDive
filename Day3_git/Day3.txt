@@ -1,0 +1,63 @@
+로컬 컴퓨터
+- 내 컴퓨터
+
+로컬 저장소
+- 내 컴퓨터 안에 저장 공간
+
+원격 저장소
+- 온라인에 내 가상적인 컴퓨터
+
+GitHub
+- 주로 개인 혹은 사이드프로젝트
+- 세계 최대 규모의 git 저장소
+- 보안
+
+GitLab : 주로 회사
+- private한 git 원격 저장소를 만들 수 있는 서비스
+- 보안성을 중요시하는 회사(소스 코드)
+- 유료
+
+서버
+- 정보를 제공하는 컴퓨터
+
+클라이언트
+- 정보를 제공하는 컴퓨터
+
+Git init 
+- 프로젝트 버전 관리 시작
+- 프로젝트 버전 폴더를 처음 열고 터미널에 이 명령어를 치고 시작함
+
+git push -u
+- 방금 입력한 주소를 기억
+
+git push -u origin <올라갈 저장소 이름>
+
+이슈
+error : src refspec main does not match any
+- main 브랜치가 존재하지 않거나, 로컬에서 커밋이 아직 되지 않을 때 발생
+
+error : failed to push some refs to 'url'
+- GitHub에 이미 올린 코드나 자료가 있을 때, 로컬 저장소와 원격 저장소가 충돌이 발생 했을 때 발생
+
+fatal : Need to specific how to reconcile divergent branches
+- 로컬 브랜치와 원격 브랜치 간에 커밋 내역이 다를 때 발생
+- 병합(merge) 기본적으로 사용
+- git config pull.rebase false
+
+fatal : refusing to merge unrelated histories
+- 서로 다른 히스토리를 가진 두 개의 저장소를 병합하려고 할 때 발생
+- 다른 내용을 가진 작업 공간들을 강제로 허용하는 것 : git pull origin main --allow-unrelated-histories -> 코멘트 입력창 ':wq' 입력
+- 
+
+* git branch -M main
+git branch -M main에서 -M은 브랜치 이름을 강제로 바꾸는 옵션
+-M은 --move --force의 축약형으로, 기존 브랜치 이름을 강제로 새 이름으로 바꿔줍니다.
+만약 새 이름(main)을 가진 브랜치가 이미 있더라도 덮어씌웁니다.
+
+Git 저장하는 순서
+1. GitHub new repository 
+2. git 로컬 저장소 생성. 터미널을 이용해서 git init
+3. git add 파일명
+4. git commit -m "메시지"
+*  git remote add 원격 별칭 url
+5. git push -u 원격 별칭 브랜치명
