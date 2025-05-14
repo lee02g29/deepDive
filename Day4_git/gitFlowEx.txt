@@ -6,7 +6,7 @@
 - git flow 전략을 이용해서 브랜치를 활용한다
     5개의 브랜치
     main or master 브랜치
-    deveop 브랜치
+    develop 브랜치
     feature 브랜치
               --- feature / 기능 1 -> 병합 dev
               --- feature / 기능 2
@@ -42,11 +42,17 @@
 git branch 브랜치 명
 
 git branch -M main
--M 옵션은 강제 이동 및 강제 이릅변경을 의미한다.(덮어쓰기)
+-M 옵션은 강제 이동 및 강제 이름변경을 의미한다.(덮어쓰기)
 
 다른 브랜치에서 main 브랜치 이동시 오류가 날 때( fatal: invaild reference: main )
 - 문제 발생 이유 : 브랜치 생성을 했는데 -M에 의해 브랜치의 이름을 변경 -> 이전 브랜치(이름) 사라짐
 - branch -M 브랜치 명을 했을 때 -> 새로 만드는 것이 아니라 덮어씌웠음 -> 따라서 이전 브랜치가 없음
+
+git clone
+- 원격 저장소(github, gitlab) 등에서 프로젝트를 로컬 환경으로 복사(다운로드)하는 명령어
+- 원격 저장소에 있는 포든 파일, 폴더, 브랜치, 커밋 기록을 포함한 전체 프로젝트를 복사한다
+
+
 
 참고 링크
 https://blog.jetbrains.com/space/2023/04/18/space-git-flow/
