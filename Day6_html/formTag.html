@@ -24,6 +24,21 @@
       가운데 정렬
       text-align: center;
     } */
+
+    a {
+      text-decoration: none;
+      background-color: cyan;
+      padding: 10px;
+
+      border-radius: 5px;
+      color: white;
+
+      transition: transform 0.3s ease;
+    }
+    a:hover {
+      background-color: black;
+      border: 2px solid cyan;
+    }
   </style>
 
 </head>
@@ -36,9 +51,9 @@
   <input type="text">
   <input type="button" value="클릭">
 
-  <>
+  <div>
     <h4>좋아하는 자동차 브랜드</h4>
-    <!-- checkbox는 여러개를 선택 -->
+    <!-- checkbox는 여러 개를 선택 가능 -->
     <input type="checkbox"><label>벤츠</label>
 
     <!-- 이미지 -->
@@ -63,6 +78,8 @@
   <input type="radio" name="pay"><label>현금</label>
 
   <input type="radio" name="pay"><label>페이</label>
+
+  <a href="#">Contact Me</a>
 </body>
 
 </html>
