@@ -1,0 +1,66 @@
+.menus {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.menu {
+  width: 20vw;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+
+  background-color: gainsboro;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.gift {
+  background-color: rgb(50, 50, 197);
+
+  width: 5vw;
+  height: 3vh;
+
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.drink {
+  width: 15vw;
+  height: auto;
+
+  transition: transform 0.3s ease;
+}
+
+.drink:hover {
+  transform: scale(1.1);
+}
+
+
+.hidden {
+  display: none;
+}
+
+.menu-overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  
+  width: 20vw;
+  height: 50vh;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  z-index: 5;
+}

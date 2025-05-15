@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="menus">
+    <div class="menu"">
+      <img class="drink" src="./imgs/IMG_1742278582482.png">
+      <div class="desc">
+        <h4 style="padding-top: 2vh;">(L) ICED 꿀 화이트 아메리카노</h4>
+        <button class="gift"><b>선물하기</b></button>
+      </div>
+
+      <div class="menu-overlay hidden" id="detail">
+        <button class="close-btn">닫기</button>
+        <div>
+          <h4>(L) ICED 꿀 화이트 아메리카노</h4>
+        </div>
+      </div>
+    </div>
+    <div class="menu"">
+      <img class="drink" src="./imgs/IMG_1742280705194.png">
+      <div class="desc">
+        <h4 style="padding-top: 2vh;">(EX) ICED 꿀 화이트 아메리카노</h4>
+        <button class="gift"><b>선물하기</b></button>
+      </div>
+      
+      <div class="menu-overlay hidden" id="detail">
+        <button class="close-btn">닫기</button>
+        <div>
+          <h4>(EX) ICED 꿀 화이트 아메리카노</h4>
+        </div>
+      </div>
+
+    </div>
+    <div class="menu">
+      <img class="drink" src="./imgs/IMG_1742279670528.png">
+      <div class="desc">
+        <h4 style="padding-top: 2vh;">(L) ICED 꿀 미숫커피</h4>
+        <button class="gift"><b>선물하기</b></button>
+      </div>
+
+      <div class="menu-overlay hidden" id="detail">
+        <button class="close-btn">닫기</button>
+        <div>
+          <h4>(L) ICED 꿀 미숫커피</h4>
+        </div>
+      </div>
+    </div>
+    <div class="menu"">
+      <img class="drink" src="./imgs/IMG_1742279746779.png">
+      <div class="desc">
+        <h4 style="padding-top: 2vh;">(EX) ICED 꿀 미숫커피</h4>
+        <button class="gift"><b>선물하기</b></button>
+      </div>
+
+      <div class="menu-overlay hidden" id="detail">
+        <button class="close-btn">닫기</button>
+        <div>
+          <h4>(EX) ICED 꿀 미숫커피</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  document.addEventListener('click', (e) => {
+    const menu = e.target.closest('.menu');
+    const close = e.target.classList.contains('close-btn');
+
+    if (menu && !close) {
+      menu.querySelector('.menu-overlay').classList.remove('hidden');
+    }
+
+    if (close) {
+      e.stopPropagation();
+      e.target.closest('.menu-overlay').classList.add('hidden');
+    }
+  });
+</script>
+
+
+</html>
