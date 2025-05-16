@@ -1,0 +1,25 @@
+/* CSS 파일 
+
+
+CSS (Cascadinng Style Sheet) 
+- CSS는 HTML로 만든 웹 페이지를 디자인 하기 위해서 스타일링하는 언어
+
+Cascading
+- 계단식
+- 여러 개의 스타일이 충돌될 때, 어떤 스타일이 우선 적용될지 결정하는 규칙
+
+https://meyerweb.com/eric/tools/css/reset/
+*/
+
+body {
+  background-color: rgb(2, 7, 21);
+}
+
+a {
+  /* 기본적으로 웹 사이트의 기본 글자 크기는 16px로 지정 
+    rem : 기본 웹 사이트의 글자 크기를 기준으로 배수로 커짐
+    2rem -> 16 * 2 = 32px
+    */
+  font-size: 1rem;
+  color: aliceblue;
+}

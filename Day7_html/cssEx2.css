@@ -1,0 +1,61 @@
+/* 
+Reset CSS
+- 모든 웹 브라우저마다 각자만의 디폴트 스타일을 가지고 있어서 css가 없어도 동작
+- 그러나 각자만의 스타일이라는 말은 브라우저마다 같은 태그라도 보이는 스타일이 다르다는 것을 의미
+- 그럴 때 Reset Css가 HTML 요소의 기본적인 디폴트 스타일을 하나의 스타일로 통일시켜 CSS를 초기화하는 용도로 사용
+
+주소 :  https://meyerweb.com/eric/tools/css/reset/
+
+CSS Selector(선택자)
+- 어떤 HTML 요소에 적용할 것인지 지정하는 문법
+
+* (전체 셀렉터 - HTML 문서 내 모든 요소 선택)
+
+tag 태그 셀렉터
+- 지정된 태그명을 가지는 요소 선택
+
+#id명 - ID 셀렉터(id 명을 입력해서 선택)
+      - 중복할 수 없는 유일한 값
+
+.클래스명 - 클래스셀렉터
+- 중복적으로 스타일 줄 수 있음
+
+*/
+
+*{
+  /* 모든 태그의 글씨를 변경 */
+  color: blue;
+}
+
+h1 {
+  color: aqua;
+}
+
+#p1 {
+  color: blueviolet;
+}
+
+.plans {
+  color: pink;
+}
+
+.product {
+  color: bisque;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-size {
+  font-size: 2rem;
+}
+
+#text-red {
+  color: red;
+  filter: brightness(1.5);
+}
+
+#text-blue {
+  color: blue;
+}
