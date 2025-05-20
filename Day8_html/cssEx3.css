@@ -1,0 +1,42 @@
+/* 
+em: 배수 단위로 상대 단위, 요소로 지정된 사이즈에 설정
+부모의 크기 배수
+중첩되면 점점 커짐
+
+rem: 최상위 요소(html)의 사이즈를 기준으로 삼음
+r의 의미는 root
+기본적으로 설정하지 않으면 16px
+*/
+
+html {
+  font-size: 20px;
+}
+
+/* body {
+  font-size: 16px;
+  text-align: center;
+} */
+
+/* 16px * 1.5 = 24px */
+/* .parent {
+  font-size: 1.5em; 
+  font-weight: bold;
+} */
+
+/* 24px * 1.5 = 36px */
+/* .child {
+  font-size: 1.5em;
+  background-color: aliceblue;
+} */
+
+/* 20px * 1 = 20px */
+.parent {
+  font-size: 1rem; 
+  font-weight: bold;
+}
+
+/* 20px * 1.5 = 30px */
+.child {
+  font-size: 1.5rem;
+  background-color: aliceblue;
+}

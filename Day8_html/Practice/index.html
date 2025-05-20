@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google clone</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" </head>
+
+<body>
+  <!-- 클래스 네이밍 쓸 때 
+  __(언더바 두 개) : (요소 아래의) 요소
+  --(바 두개) : 스타일 변경
+  
+  BEM 방법론
+    block, element, modifier
+    - 독립적인 컴포넌트(div 한 단락) main__title
+    - modifier -> 상태/스타일 변경 card__button-disabled
+  -->
+
+  <div class="main">
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/552px-Google_2015_logo.svg.png">
+    <div class="main__search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input placeholder="Google 검색 및 URL 입력">
+      <button><i class="fa-solid fa-microphone"></i></button>
+      <button><i class="fa-solid fa-camera"></i></button>
+    </div>
+  </div>
+</body>
+
+</html>

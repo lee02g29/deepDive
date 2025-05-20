@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="cssEx3.css">
+</head>
+<body>
+  <h1>CSS 프로퍼티 값 단위</h1>
+  <p>px : 절대 단위(고정) 1px 화소 1개 크기</p>
+
+  <!-- 디지털 화면에서 고정된 크기를 의미 
+    보통 1px는 화면에 크기는 작은 점 하나
+  -->
+
+  <p>em 배수 단위로 상대 단위,
+    요소에 지정된 사이즈에 상대적 사이즈 설정
+  </p>
+
+  <div>
+    Font-size: 1.2em -> 14px * 1.2 = 16.8px
+    (현재 css에서 폰트 크기가 14px일 때)
+  </div>
+
+  <div class="parent">
+    부모 (1.5em = 24px)
+    <div class="child">
+      자식 (1.5em = 36px)
+    </div>
+  </div>
+</body>
+</html>

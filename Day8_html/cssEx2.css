@@ -1,0 +1,37 @@
+/*
+  인접 형제 선택자(셀렉터)
+
+  바로 다음에 나오는 형제
+*/
+
+:root {
+  --enabled-color: blue;
+  --disabled-color: gray;
+  --checked-color: red;
+}
+
+input:enabled+span {
+  color: var(--enabled-color);
+}
+
+input:disabled+span {
+  color: var(--disabled-color);
+  text-decoration: line-through;
+}
+
+input:checked+span {
+  color: var(--checked-color);
+}
+
+/* p 요소 중에서 첫번째 자식을 선택 */
+p:first-child {
+  color: red;
+}
+
+/* p 요소 중에서 마지막 자식을 선택 */
+
+/* body 요소의 두번째 p 요소는 마지막 자식 요소가 아니다. 
+body 요소의 마지막 자식 요소는 div 요소이다. */
+p:last-child {
+  color: blue;
+}

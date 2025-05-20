@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-box {
+  box-sizing: content-box;
+  background-color: aqua;
+
+  border: 2px solid black;
+
+  width: 500px;
+  height: 500px;
+}
+
+.border-box {
+  box-sizing: border-box;
+  background-color: blue;
+
+  border: 2px solid black;
+
+  width: 500px;
+  height: 500px;
+}

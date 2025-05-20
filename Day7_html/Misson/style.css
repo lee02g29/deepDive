@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 100vh;
+
+  background-color: rgb(2, 7, 21);
+
+  color: white
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+}
+
+.intro p {
+  font-size: 1.6rem;
+}
+
+.works {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+
+  width: 50vw;
+}
+
+.buttons input {
+  padding: 10px 50px 10px 50px;
+
+  background-color: rgb(2, 7, 21);
+  border: 1px solid cyan;
+  border-radius: 5px;
+
+  color: white;
+  font-size: 1.5rem;
+}
+
+.buttons input:hover {
+  background-color: cyan;
+  border: 1px solid cyan;
+  color: black;
+}
+
+/* .buttons .clicked {
+  background-color: cyan;
+  border: 1px solid cyan;
+  color: black;
+} */
+
+.works-grid {
+  display: grid;
+
+  width: 80vw;
+  height: 60vh;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+
+  margin: 30px;
+}
+
+.work {
+  border-radius: 5px;
+}
+
+.work:hover {
+  opacity: 0.7;
+}
+
+.work-color {
+  background-color: white;
+}
