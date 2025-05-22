@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+}
+
+#wrap {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(230, 230, 230);
+}
+
+#modal {
+  width: 500px;
+  height: 450px;
+
+  background-color: white;
+
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 10px;
+}
+
+#wrap {
+  transition: opacity 0.5s ease;
+}
+
+#wrap.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.close {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  margin-right: 50px;
+  cursor: pointer;
+
+  text-align: center;
+}
+
+.close i {
+  padding: 0 5px;
+}
+
+.close i:hover{
+  background-color: gainsboro;
+  border-radius: 50%;
+}
+
+#modal i {
+  font-size: 1.5rem;
+}
+
+#modal img {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+}
+
+.modal__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.modal__desc h2 {
+  margin: 10px;
+}
+
+.modal__desc span {
+  margin: 5px;
+}
+
+#modal__desc__2 {
+  font-size: 0.8rem;
+}
+
+.modal__continues {
+  display: flex;
+  flex-direction: column; 
+}
+
+#modal__sign-up {
+  width: 25vw;
+  height: 35px;
+
+  color: white;
+
+  background-color: rgb(100, 211, 255);
+  border: none;
+
+  margin: 2px;
+
+  border-radius: 10px;
+}
+
+#modal__sign-up:hover {
+  background-color: rgb(100, 165, 255);
+}
+
+#modal__sign-in {
+  width: 25vw;
+  height: 35px;
+
+  background-color: white;
+  color: rgb(100, 211, 255);
+  border: none;
+
+  margin: 2px;
+
+  border-radius: 10px;
+}
+
+#modal__sign-in:hover {
+  background-color: gainsboro;
+}

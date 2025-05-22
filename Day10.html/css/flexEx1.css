@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+
+div {
+  border: 2px solid deepskyblue;
+}
+
+#wrap {
+  border: 2px solid red;
+
+  /* 화면 정리 */
+  display: flex;
+}
+
+/* flex가 적용된 상태에서 비율 조정 */
+#blog__title {
+  /* flex: 2; */
+  /* flex -> 커지기. 기본 사이즈는 0 
+    -> 축약형 
+    flex == flex-grow
+  */
+
+  flex-grow: 2;
+  /* 이 설정을 통해 기본적인 비율 정렬 가능 */
+
+  display: flex;
+}
+
+
+#blog__titleimg {
+  width: 50px;
+  height: 50px;
+}
+
+#blog__img__box{
+
+}
+
+@media(max-width:768px) {
+  #wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}

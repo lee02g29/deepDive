@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃</title>
+  <link rel="stylesheet" href="css/layoutEx.css">
+
+  <!-- 
+    SEO
+    검색 엔진 최적화
+    웹 사이트가 검색 엔진에서 더 높은 순위에 나타나도록
+    웹사이트 구조나 콘텐르를 최적화하는 기술
+
+    검색엔진 작동방식
+    - 키둬드 입력시 관련성 높은 페이지를 순위별로 나열
+    - 페이지의 구조와 내용 인덱싱
+    - 인터넷을 돌아다니며 크롤링
+
+    SEO를 잘한다는 것
+    - 검색 결과에서 상위에 노출되도록 설계했다는 것
+
+    SEO 3가지 단계
+    - 기술적 SEO : HTML, meta, 속도, 모바일 최적화 등
+    - 콘텐츠 SEO : 키워드, 제목, 본문 내용의 구성
+    - 외부 SEO : 다른 사이트에서 얼마나 많이 링크 됐는지
+  -->
+
+  <!-- 파비콘 설정, 파비콘 : 타이틀 옆에 작은 아이콘 -->
+  <link rel="shortcut icon" href="imgs/drink_visual.jpg">
+
+
+  <!-- 검색이 잘 될 수 있도록 키워드, 내용 설정 -->
+  <meta name="description" content="portfolio for software engineer perdy">
+
+  <meta name="author" content="perdy">
+
+  <!-- 공유할 때 카드형 링크 미리보기 생성 
+    OG(Open Graph Data)
+  -->
+  <meta property="og:title" content="perdy의 포트폴리오">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="배포 후 생성된 url">
+  <meta property="og:imgae" content="배포 후 생성된 이미지 URL(경로)/파일">
+
+<body>
+  <!-- 레이아웃
+    <h1>오늘은 레이아웃</h1>
+    <h1>오늘은 레이아웃2</h1>
+
+    layout의 핵심 : block 레벨의 요소들을 원하는 위치에 배열하는 것
+    화면이나 페이지에서 각 요소(텍스트. 이미지, 버튼)를 배치하는 구조
+
+    - 시멘틱 태그
+
+    wrap 하는 이유는 웹 페이지의 전체 구조나 큰 블록을 묶어 레이아웃이나
+    스타일을 통일 시킬 때 사용
+  -->
+
+  <div id="wrap">
+    <header>
+      <a class="logo" href="#home">
+        <img src="imgs/abstract-logo-design-for-any-corporate-brand-business-company-vector.jpg">
+      </a>
+
+      <nav>
+        <ul class="nav__items">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#News">News</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li><a href="#About">About</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+</body>
+
+</html>

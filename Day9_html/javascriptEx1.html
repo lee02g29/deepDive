@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+    <!-- 부트스트랩 아이콘 CDN 
+    CDN(Content Delivery Network)란?
+      
+    콘텐츠 전송 네트워크
+    웹 페이지에서 사용되는 css, javascript같은 파일을
+    여러 지역에 분산된 서버에 저장해서 사용자에게 가장
+    가까운 서버에서 빠르게 전달해주는 시스템.
+
+  ex) 내가 서울에서 웹 사이트 열면 
+    서울에 있는 CDN 서버에서 파일을 전달.
+    미국사람이 접속하면 
+    미국에 있는 CDN서버에서 파일 전달
+    위에 내용을 사용하면 속도도 빠르고 서버 부하를 줄일 수 있음.
+
+  -->
+    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <style>
+    .bi {
+      font-size: 30px;
+      margin: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 자바 스크립트
+    - 웹 브라우저에서 동장하는 인터프리터 방식의 프로그래밍
+    웹 페이지에서 동적인 동작과 로직 추가
+    자바스크립트는 움직임을 주는것
+  -->
+
+  <h1>자바 스크립트</h1>
+
+  <h1>1</h1>
+
+  <h1 id="hello">2</h1>
+
+  <i class="bi bi-bookmark" id="bookmark"></i>
+
+  <i class="bi bi-heart" id="heart"></i>
+
+  <button onclick="show()">Click Me</button>
+
+  <!-- html을 움직일 수 있도록 조작 
+    1. html 문서를 알고 있어야 함.
+  -->
+  <script>
+    // 행동을 하는 자바스크립트 코드 작성
+    // document는 html 문서를 조작할 수 있게 도와주는 객체
+
+    /* 
+      자바스크립트 행동
+      1. document html 코드를 읽음
+      2. 읽고 나서 태그를 찾음 getElementById
+      3. 찾은 다음에 변경(행동)
+    */
+    console.log(document.getElementById("hello").innerHTML = 'hello');
+
+  </script>
+  <script src="js/javascriptEx1.js"></script>
+</body>
+
+</html>

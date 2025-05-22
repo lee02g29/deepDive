@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__banner {
+  width: 60%;
+  height: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+}
+
+.main__banner img {
+  object-fit: cover;
+
+  width: 100%;
+  height: 100%;
+}
+
+.main__banner .main__prom {
+  position: absolute;
+
+  top: 15%;
+  width: 90%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  color: white;
+}
+
+.main__prom span {
+  font-size: 48px;
+}
+
+
+.main__prom button {
+  font-size: 20px;
+  border: none;
+
+  padding: 15px 40px;
+}
+
+.main__prom button:hover {
+  background-color: rgb(202, 202, 202);
+}
+
+
+.main__desc {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  width: 35%;
+  background-color: rgb(228, 228, 228);
+
+  position: absolute;
+  bottom: 15%;
+
+  padding: 30px 45px;
+}
+
+.main__desc span {
+  font-size: 18px;
+  font-weight: bold;
+}

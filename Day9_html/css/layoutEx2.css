@@ -1,0 +1,58 @@
+/* 
+@media 조건 {
+  조건에 맞을 때 적용될 css
+} 
+
+조건
+max-width : 최대 너비(이하일 때 적용)
+min-width : 최소 너비(이상일 때 적용)
+orientation: 방향(세로/가로)
+hover : 마우스를 올릴 수 있는지 여부(터치 디바이스 용)
+
+*/
+
+/* 1) 화면 769px 이하가 될 때 배경색 파란색으로 변경 */
+/* @media(max-width:769px) {
+  body {
+    background-color: aliceblue;
+  }
+} */
+
+/* 화면이 500px이하가 될 때, h1의 폰트 사이트 15px*/
+/* @media(max-width:500px) {
+  h1 {
+    font-size: 15px;
+  }
+} */
+
+/* 화면 디바이스(스크린) & 가로 너비가 769이상일 때, 
+배경색을 변경 */
+/* @media screen and (min-width:769px) {
+  body {
+    background-color: pink;
+  }
+} */
+
+/* 화면 디바이스(스크린) 아니거나 가로 너비가 769미만일 때, 
+배경색을 변경
+
+screen 스마트폰, 태블릿, pc
+not screen : 프린터로 출력할 때
+
+반응형 웹 디자인은 viewport 너비(width) 기준으로 함
+
+Mobile First
+- 어플리케이션에서 가장 중요한 사이즈가 모바일
+
+*/
+@media not screen and (min-width:769px) {
+  body {
+    background-color: grey;
+  }
+}
+
+/* 반응형에서 크기 조절하는 것 */
+.contatiner {
+  max-width: 1200px;
+  max-height: 1400px;
+}

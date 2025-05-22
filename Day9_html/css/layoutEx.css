@@ -1,0 +1,47 @@
+/* 
+  기본적으로 마진(테두리를 기준으로 밖 여백)
+*/
+
+body {
+  margin: 0;
+}
+
+/* 태그 안에 태그가 들어간 중첩 요소들은 
+기본 클래스이름을 쓰고 내가 적용하고 싶은 태그를 작성 */
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+/* 밑줄과 점 없애기 
+안쪽과 밖 여백을 없애기 */
+.nav__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__items a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* float 
+  한 줄에 하나씩 요소를 가로로 정렬하기 위해서 사용하는 기법
+  - 원래 이미지 주위를 텍스트로 감싸기 위해 만들어진 것
+  기본 float : none
+
+  float를 선언된 요소 & 선언되지 않은 요소 간 마진 사라짐
+  float로 선언된 자식 요소를 포함한 부모 요소의 높이가 정상적으로 반영 x
+
+  위의 내용을 해결하는 방법 
+  float : clear
+  - float를 콘텐츠를 띄울 시, 다음 내용은 빈자리를 채우러 올라오게 됨
+  이러한 현상은 브라우저의 오류로 생겨난 것이고, 이를 해결하기 위해서
+  clearfix는 위의 문제들을 해결하기 위한 방법
+*/
+
+.nav__items li {
+  float: left;
+  margin: 10px;
+}

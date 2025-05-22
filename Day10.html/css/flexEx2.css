@@ -1,0 +1,46 @@
+div {
+  border: 2px solid cyan;
+}
+
+#wrap {
+  display: flex;
+}
+
+#box__left {
+  flex-grow: 2;
+}
+
+#box__left__author {
+  display: flex;
+  /* flex 레이아웃은 기본적으로 가로 정렬(row) */
+  justify-content: space-between;
+
+}
+
+#box__right div {
+  border: 1px solid rgb(203, 0, 0);
+  border-radius: 50%;
+
+  margin: 20px;
+  padding: 20px 30px;   
+  /* 상하 좌우 / 상 우 하 좌, 시계방향 */
+
+  text-align: center;
+}
+
+.bi {
+  cursor: pointer;
+}
+
+.heart-red {
+  color: rgba(255, 0, 0, 0.753);
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+#box__right p {
+  margin: 0;
+}

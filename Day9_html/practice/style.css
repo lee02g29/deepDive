@@ -1,0 +1,60 @@
+.carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+
+@media(max-width: 769px) {
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+
+  margin: 10px;
+}
+
+.prod__image {
+  width: 512px;
+}
+
+.prod__image image {
+  object-fit: cover;
+}
+
+.prod__image span {
+  background-color: rgb(248, 65, 65);
+
+  width: 45px;
+  border-radius: 6px;
+  padding: 5px 10px;
+
+  text-align: center;
+
+  color: white;
+  font-weight: bold;
+
+  position: relative;
+
+  left: 10px;
+  top: 35px;
+
+  margin: 0;
+
+}
+
+.prod__image i {
+  position: relative;
+
+  left: 90%;
+  bottom: 60px;
+}
