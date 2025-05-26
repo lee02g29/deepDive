@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- onclick="" 
+    input 태그에서도 가능
+
+    마우스로 체크박스를 클릭할 때 실행
+    실행할 문장을 "" 안에 작성
+  -->
+  <!-- <input type="checkbox" value="1" onclick="console.log('1')">1<br>
+  <input type="checkbox" value="2" onclick="console.log('2')">2<br>
+  <input type="checkbox" value="3" onclick="console.log('3')">3<br> -->
+
+  <!-- <input type="checkbox" value="1" onclick="alert('1')">1<br>
+    <input type="checkbox" value="2" onclick="alert('2')">2<br>
+    <input type="checkbox" value="3" onclick="alert('3')">3<br> -->
+
+    <!-- window.open('URL') 
+      자바 스크립트에서 새 창(또는 새 탭)으로 열기
+
+      자바스크립트에서 window 객체는 웹 프라우저 전체창을 의미
+      - 브라우저 창 자체를 조작하거나 정보에 접근하는 최상위 개체
+    -->
+
+  <!-- <input type="checkbox" value="naver" onclick="window.open('https://www.naver.com')">naver<br>
+  <input type="checkbox" value="google" onclick="window.open('https://www.google.com')">google<br>
+  <input type="checkbox" value="3" onclick="console.log('3')">3<br> -->
+
+  <!-- onclick이 실행해야하는 것
+    1. input 태그 중 어느 체크박스가 클릭됐는지 파악
+    2. 클릭이 되면, 클릭된 요소를 콘솔(결과창) 출력
+    3. 
+  -->
+  <input type="checkbox" value="1000" onclick="clickSum(this)">1000<br>
+  <input type="checkbox" value="2000" onclick="clickSum(this)">2000<br>
+  <input type="checkbox" value="3000" onclick="clickSum(this)">3000<br>
+
+  <h5> 총 힙 : <span id="total">0</span></h5>
+
+  <script src="../js/javascriptEx1.js"></script>
+</body>
+
+</html>

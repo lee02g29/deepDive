@@ -1,0 +1,36 @@
+#wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 100%;
+
+}
+
+#prac1{
+  flex-grow: 1;
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+#prac2{
+  flex-grow: 1;
+  background-color: aqua;
+  padding: 10px;
+}
+
+#prac3{
+  flex-grow: 1;
+  background-color: rgb(0, 132, 239);
+  padding: 10px;
+}
+
+.tag {
+  font-size: 1.2rem;
+
+  background-color: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}

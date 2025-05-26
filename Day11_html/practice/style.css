@@ -1,0 +1,39 @@
+div {
+  height: 100%;
+  /* width: 100%; */
+  border: 2px solid black;
+}
+
+.mystyle {
+  max-width: 1200px;
+  height: 100vh;
+  width: 100%;
+}
+
+.cart-box {
+  display: flex;
+}
+
+.cart-left {
+  flex-grow: 7;
+}
+
+.cart-right {
+  flex-grow: 3;
+  position: relative;
+}
+
+.order__info__box {
+  display: flex;
+
+  height: 150px;
+  padding: 10px;
+}
+
+.cart__order_price__box {
+  position: sticky;
+
+  top: 20px;
+
+  height: 280px;
+}

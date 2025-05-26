@@ -1,0 +1,63 @@
+.mystyle {
+  /* 최대 너비 지정 */
+  max-width: 1200px;
+
+  /* 배경색이 나오지 않았던 이유 : container 클래스가
+  부모를 누구로 잡아야할지 모르기 때문에
+  (body의 정확한 너비와 높이를 모르기 때문에)
+  */
+
+  /* vh : Viewport Height
+    현재 브라우저 화면의 세로 길이를 100%로 잡기
+    현재 브라우저의 높이를 기준으로 설정
+    디바이스의 크기에 상관없이 자동으로 맞춤
+  */
+  height: 100vh;
+  
+  /* background-color: lightcyan; */
+}
+
+/* 캐러셀 높이 조절 css */
+.carousel-item {
+  height: 300px;
+
+  /* div의 영역에 자동 조절되서 꽉 차 보일 수 있도록 설정 */
+  /* background-size: cover; */
+  /* object-fit: cover; */
+
+  /* object-fit
+    - cover : 비율을 유지하면서 div를 꽉 채움(잘릴 수도 있음)
+    - contain : 비율을 유지하면서 div안에 완전히 들어오게 함(여백이 생길 수 있음)
+    - fill : 비율을 무시하고 꽉 채움(찌그러질 수 있음)
+    - none : 원래 크기 그대로(넘칠 수 있음)
+    */
+}
+
+.carousel-item img{
+  height: 400px;
+
+  background-size: auto;
+}
+
+.product__list {
+  margin-top: 50px;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* css 여러 규칙이 같은 요소에 적용될 수 있을 때,
+  어떤 스타일이 적용될지 결정하는 기준
+  
+  우선순위
+  인라인 스타일(1000점)
+  id 선택자(100점)
+  class, 속성, 가상 클래스 선택자자(10점)
+  태그, 요소 선택자(1점)
+  전체(*), 상속된 스타일 등 (0점)
+  
+  인라인 스타일보다 반드시 우선 순위가 높은 것(반드시 적용됨)
+  !important
+
+*/
