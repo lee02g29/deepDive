@@ -1,0 +1,105 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hotdeal {
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+
+.deal__desc {
+  color: rgb(172, 172, 172);
+  margin-bottom: 0;
+}
+
+#countdown {
+  display: flex;
+  align-items: center;
+
+  margin: 10px;
+}
+
+#timer {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#product__list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.product__item {
+  display: flex;
+  flex-direction: column;
+
+  width: 200px;
+
+  background-color: rgb(242, 242, 242);
+  border-radius: 10px;
+
+  padding: 15px;
+}
+
+.product__item img {
+  width: 200px;
+  height: 200px;
+}
+
+.product__name {
+  margin: 5px;
+}
+
+.product__info {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+
+  margin: 10px;
+}
+
+.discount {
+  color: rgb(252, 76, 12);
+  font-weight: bold;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.product__add {
+  border-radius: 5px;
+  border: 1px solid rgb(172, 172, 172);
+
+  background-color: white;
+  padding: 5px;
+}
+
+.product__add:hover {
+  background-color: rgb(172, 172, 172);
+  color: white;
+}
+
+/* 텍스트 말 줄임처리 : css에서 설정하기 */
+.title {
+  white-space: nowrap;        /* 줄 바꿈 없음 */
+  overflow: hidden;           /* 넘치는 텍스트 숨기기 */
+  text-overflow: ellipsis;    /* 말줄임(...) 표시 */
+}
+
+/*
+  기존 배열 복사 in react
+  spread
+  - 기존 배열의 내용을 모두 복사
+  [...배열명, 새로운거, 새로운거]
+
+  배열을 복사할 때 생기는 문제점들이 있음.
+  그것을 해결하기 위해 나온 문법
+
+  깊은 복사, 얕은 복사
+*/

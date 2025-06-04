@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  left: 0;
+
+  width: 80%;
+  height: 250px;
+
+  background-color: azure;
+  border-radius: 5px;
+  border: 0.5px solid grey;
+
+  padding: 20px;
+  margin: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+
+  margin-bottom: 20px;
+}
+
+#box1 {
+  transition: background-color 1s ease;
+}
+
+#showBox {
+  position: relative;
+  top: 50px;
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
+}

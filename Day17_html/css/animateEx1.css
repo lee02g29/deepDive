@@ -1,0 +1,58 @@
+/*
+  css 중복시 코드의 효율성이 떨어짐
+  중복되는 코드를 묶어서 하나의 css를 설정
+  그리고 상속
+*/
+
+div {
+  /* 위치 지정 */
+  position: relative;
+  left: 0px;
+
+  width: 100px;
+  height: 100px;
+
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+}
+
+#box1 {
+  background-color: lightblue;
+}
+
+#box2 {
+  background-color: lightcoral;
+}
+
+#box3 {
+  background-color: lightgreen;
+}
+
+#loopText {
+  width: 300px;
+}
+
+#barMain {
+  /* 메인 바 : 웹 브라우저를 기준으로 너비 */
+  width: 100vw;
+  height: 50px;
+  border: 1px solid grey;
+
+  position: relative;
+}
+
+#bar {
+  width: 10px;
+  height: 100%;
+  background-color: lemonchiffon;
+  margin: 0;
+
+}
+
+.bar___text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <p class="hotdeal">⚡단 하루, 반짝특가 랭킹</p>
+    <p class="deal__desc">24시간 한정 최대 혜택 놓치지 마세요</p>
+    <p id="countdown">
+      <dotlottie-player src="Animation.json" background="transparent" speed="1" style="width: 50px; height: 50px" loop
+        autoplay></dotlottie-player>
+      <span id="timer">시간 계산 중</span>
+    </p>
+    <div id="product__list">
+      <div class="product__item">
+        <img
+          src="https://images.ctfassets.net/f4wds240813j/7BzzTNtJvj4tGWueb3qFf8/89746f6fe654bf72e1cf6da54f8967fe/main.png?fm=webp&q=75">
+        <div class="product__info">
+          <h1>1</h1>
+          <div class="product__title">
+            <p class="product__name">[다우니] 섬유유연제 14종</p>
+            <span class="discount">21%</span>
+            <span class="price">6,490원~</span>
+          </div>
+        </div>
+        <button class="product__add">🛒담기</button>
+      </div>
+      <div class="product__item">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBuGXG2-pi6KIxTHWRqgKCFWmxz2Dzk7vx6Q&s">
+        <div class="product__info">
+          <h1>2</h1>
+          <div class="product__title">
+            <p class="product__name">[네이쳐리빙]모던데일 메모리폼 발매트</p>
+            <span class="discount">50%</span>
+            <span class="price">10,900원~</span>
+          </div>
+        </div>
+        <button class="product__add">🛒담기</button>
+      </div>
+      <div class="product__item">
+        <img
+          src="https://zaeleckorea.com/web/product/big/202412/c32a24ef738c095bef91152cf37f6f0d.png">
+        <div class="product__info">
+          <h1>3</h1>
+          <div class="product__title">
+            <p class="product__name">[자일렉] 오븐형 에어프라이어 18L</p>
+            <span class="discount">49%</span>
+            <span class="price">69,900원~</span>
+          </div>
+        </div>
+        <button class="product__add">🛒담기</button>
+      </div>
+      <div class="product__item">
+        <img
+          src="https://m.smartliosen.com/web/product/big/202404/f4d01bb0f2bc1d027800866ff5379445.png">
+        <div class="product__info">
+          <h1>4</h1>
+          <div class="product__title">
+            <p class="product__name">[아키라] 스마트 도어락 K100 </p>
+            <span class="discount">30%</span>
+            <span class="price">442,400원~</span>
+          </div>
+        </div>
+        <button class="product__add">🛒담기</button>
+      </div>
+      <div class="product__item">
+        <img
+          src="https://img.danawa.com/prod_img/500000/538/763/img/3763538_2.jpg?_v=20240919150945">
+        <div class="product__info">
+          <h1>5</h1>
+          <div class="product__title">
+            <p class="product__name">[아스토니쉬] 곰팡이 제거제</p>
+            <span class="discount">53%</span>
+            <span class="price">11,900원~</span>
+          </div>
+        </div>
+        <button class="product__add">🛒담기</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+
+</html>

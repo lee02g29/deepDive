@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="../css/animateEx1.css">
+  </link>
+</head>
+
+<body>
+  <h1>
+    애니메이션
+  </h1>
+  <h4>
+    버튼을 클릭하면 박스를 움직이기
+  </h4>
+
+  <!-- 움직임 -->
+  <div id="box1"></div>
+  <button id="btnBox">움직이기</button>
+
+  <!-- 버튼을 클릭하면 박스 확대 -->
+  <div id="box2"></div>
+  <button id="btnGrow">움직이기</button>
+
+  <!-- 박스에 투명도 주기 -->
+  <div id="box3"></div>
+  <button id="btnFade">투명해지기</button>
+
+  <!-- 텍스트를 계속 깜빡이는 애니메이션 -->
+  <div id="loopText">
+    😺고양이😺
+  </div>
+
+  <!-- 프로그레스바 -->
+  <div id="barMain">
+    <!-- 진행바가 올라가는 모습을 구현하기 위해 div 하나 더 필요 -->
+    <div id="bar"></div>
+    <span class="bar___text">0%</span>
+  </div>
+
+  <button id="fillBtn">진행 시작</button>
+
+  <script src="../jquery/query-3.7.1.min.js"></script>
+
+  <script src="../js/animateEx1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>로컬 스토리지</h1>
+
+  <!-- 저장을 누르면 ID를 저장
+    불러오기를 누르면 ID를 저장소에서 불러옴.
+    이후, 팝업창 alert에 표시
+  -->
+  <button onClick="save()">저장</button>
+  <button onClick="load()">불러오기</button>
+
+  <h4>비밀번호 저장하기</h4>
+  <input type="text" id="pwInput" placeholder="비밀번호">
+  <button onClick="pwSave()">비밀번호 저장</button>
+  <button onClick="pwLoad()">비밀번호 불러오기</button>
+
+  <!-- 비밀번호 출력 -->
+  <p id="result"></p>
+
+  <h1>3초 후 이메일 자동 저장</h1>
+  <input type="text" id="emailInput" placeholder="이메일">
+  <button onclick="saveEmail()">이메일 저장</button>
+
+  <!-- 
+    Date()
+    자바스크립트에서 현재 날짜와 시간을 제공해주는 기능
+    자바스크립트에서 제공하는 기능 -> 내장 객체
+    -> 객체들은 기본적으로 첫 글자가 대문자
+  -->
+  <h3>현재 시간 표시</h3>
+  <p id="clock">시간 로딩 중.</p>
+
+  <script src="../js/localStorage1.js"></script>
+</body>
+
+</html>
