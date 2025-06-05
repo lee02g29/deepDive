@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 이거 쓰면 input과 textarea가 치우친걸 정렬할 수 있음 
+
+  box-sizing의 기본값인 content-box 때문에,
+  input과 textarea의 width: 100%;가 콘텐츠 영역의 100%만을 의미했고, 
+  거기에 padding과 border가 추가되면서
+  요소의 실제 너비가 부모 컨테이너의 100%를 초과하게 된 것.
+*/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  background: #fafafa;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.input-group {
+  margin-bottom: 0.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-post {
+  background-color: #4caf50;
+}
+
+.btn-delete {
+  background-color: #f44336;
+}
+
+.post-list {
+  margin-top: 1rem;
+}
+
+.post {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75rem 0;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.post-title {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.post-content {
+  margin-left: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.post-date {
+  margin-left: 0.5rem;
+}
+
+.no-posts {
+  text-align: center;
+  color: #888;
+  margin-top: 1rem;
+}

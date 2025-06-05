@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      padding: 2rem;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .stack {
+      border: 2px dashed #666;
+      padding: 1rem;
+      margin-top: 1rem;
+      background: #fff;
+      width: 300px;
+      min-height: 150px;
+    }
+
+    .stack-box {
+      margin-top: 2rem;
+    }
+
+    .stack-item {
+      background: #d1ecf1;
+      padding: 8px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+      text-align: center;
+      color: #0c5460;
+    }
+
+    .queue-item {
+      background: #d1ecf1;
+      padding: 8px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+      text-align: center;
+      color: #0c5460;
+    }
+
+    .buttons {
+      margin-top: 1rem;
+    }
+
+    button {
+      padding: 8px 12px;
+      margin-right: 10px;
+      border: none;
+      background: #007bff;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+    자료 구조
+    - 데이터를 어떤 방식으로 저장하고 불러올지 정하는 구조
+
+    알고리즘
+    - 데이터를 어떤 순서와 방식으로 처리할지 정하는 방법
+
+    프론트엔드 개발은 단순히 예쁜 화면을 만드는 것이 아니라,
+    사용자가 빠르고 효율적으로 웹을 사용할 수 있도록 만들어주는 것
+  -->
+
+  <h2>Map</h2>
+  <!-- 
+    Map이라는 배열을 변형할 때 가장 많이 쓰이는 함수 중에 하나
+    - 배열의 각 요소를 순회하면서 함수를 적용한 결과를 새로운 배열로 반환
+    - 원본 배열은 변경되지 않고, 항상 새로운 배열이 반환
+  -->
+  <ul id="list">
+    
+
+  </ul>
+
+  <h2>Stack</h2>
+  <button onclick="addHandle()">작업 추가</button>
+  <button onclick="undo()">실행 취소</button>
+
+  <div class="stack-box" id="historyBox">
+    <!-- 작업 기록이 여기에 표시됩니다. -->
+  </div>
+
+  <h2>Queue</h2>
+
+  <button onclick="addQueueHandle()">큐 추가</button>
+  <button onclick="removeQueue()">큐 취소</button>
+
+  <div class="queue-box" id="alertQueueBox">
+    <!-- 알림 목록이 여기에 표시됩니다. -->
+  </div>
+
+  <script src="./js/map.js"></script>
+  <!-- <script src="./js/dataStructure1.js"></script>
+  <script src="./js/spreadOp.js"></script> -->
+</body>
+
+</html>
