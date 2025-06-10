@@ -1,0 +1,44 @@
+img {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+  border: 1px solid #20212447;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 4px 4px 10px 2px #20212447;
+  border-radius: 20px;
+
+  padding: 2rem;
+  margin: 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  width: fit-content;
+
+  position: relative;
+}
+
+.new {
+  background-color: aquamarine;
+  padding: 0 8px 3px;
+  border-radius: 5px;
+
+  position: absolute;
+  top: 43px;
+  right: 43px;
+
+  font-weight: bold;
+}
