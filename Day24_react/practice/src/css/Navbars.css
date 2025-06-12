@@ -1,0 +1,15 @@
+.nav-bars .nav-link{
+  color: rgba(255, 166, 0, 0.621);
+}
+
+.nav-bars .nav-link:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+
+.nav-bars .nav-link.active {
+  color: orange !important;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
