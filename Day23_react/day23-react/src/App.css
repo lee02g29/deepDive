@@ -1,0 +1,9 @@
+.my-button {
+  background-color: azure;
+  color: black;
+  border: none;
+}
+
+.my-button:hover {
+  background-color: navy;
+}

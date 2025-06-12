@@ -1,11 +1,11 @@
-import Profile from "./assets/components/Profile";
+import Profile from "./components/Profile";
 /*
   전역변수처럼 여러 컴포넌트가 동일한 디자인을 가지고 싶을 경우,
   App 메인화면에서 디자인하는 것이 좋음.
 */
 import './App.css'
-import ArticleList from "./assets/components/ArticleList";
-import Counter from "./assets/components/Counter";
+import ArticleList from "./components/ArticleList";
+import Counter from "./components/Counter";
 
 
 function App() {

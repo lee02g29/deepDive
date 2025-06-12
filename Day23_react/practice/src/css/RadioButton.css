@@ -1,0 +1,24 @@
+.radio-button {
+  background-color: transparent;
+  color: black;
+  border: 1px solid rgb(59, 59, 59);
+
+  padding: 5px 60px;
+
+  border-radius: 0px;
+
+  color: rgb(59, 59, 59);
+}
+
+.btn-check:hover + .btn.radio-button {
+  background-color: rgb(232, 232, 232);
+  border: 1px solid rgb(59, 59, 59);
+
+  color: black;
+}
+
+.btn-check:checked + .btn.radio-button {
+  background-color: rgb(59, 59, 59);
+  border: 1px solid rgb(59, 59, 59);
+  color: white;
+}

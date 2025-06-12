@@ -1,0 +1,22 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 40vh;
+  background-color: aliceblue;
+
+  background-image: url("../assets/bakery_visual.jpg");
+
+  gap: 20px;
+}
+
+.banner__font {
+  color: black;
+}
+
+.banner_info {
+  font-size: 2.2rem;
+}
