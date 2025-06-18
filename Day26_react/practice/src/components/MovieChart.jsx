@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../css/MovieChart.css";
+import { Link } from "react-router-dom";
 
 export default function MovieChart() {
   const [movies, setMovies] = useState([]);
@@ -30,13 +31,29 @@ export default function MovieChart() {
       <div className="container">
         {movies.map((movie) => (
           <article className="movie">
-            <div className="movie__rank">
-              <h3>{movie.rank}</h3>
+            <div
+              className={`movie__rank${
+                movie.rank === "1" || movie.rank === "2" || movie.rank === "3"
+                  ? "--top"
+                  : ""
+              }`} 
+            >
+              <span>No.{movie.rank}</span>
             </div>
             <div className="movie__img"></div>
-            <h3>{movie.movieNm}</h3>
-            <span>{movie.openDt && movie.openDt.trim() !== '' ? movie.openDt : '--'} 개봉 </span>
-            <span>누적 관객 : {movie.audiAcc || 0}명</span>
+            <span className="movie__name">{movie.movieNm}</span>
+            <span className="movie__info">
+              {movie.openDt && movie.openDt.trim() !== ""
+                ? movie.openDt
+                : "--.--.--"}{" "}
+              개봉{" "}
+            </span>
+            <span className="movie__info">
+              누적 관객 : {movie.audiAcc || 0}명
+            </span>
+            <Link to={`/detail/${movie.rnum}`} key={movie.rnum}>
+              <button className="movie__reserve">예매하기</button>
+            </Link>
           </article>
         ))}
       </div>

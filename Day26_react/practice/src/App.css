@@ -8,3 +8,35 @@
 
   padding: 10px;
 }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 70%;
+
+  border-bottom: 2px solid black;
+
+  padding: 15px 5px;
+
+  box-sizing: border-box;
+}
+
+.link {
+  font-size: 2rem;
+  text-decoration-line: none;
+  color: black;
+}
+
+.plan__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan__item {
+  padding: 5px;
+}
