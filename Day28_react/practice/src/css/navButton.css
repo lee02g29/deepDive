@@ -1,0 +1,12 @@
+.nav__button {
+  border-radius: 50%;
+  border: 1px solid #5A779C;
+  padding: 7px 10px;
+  text-align: center;
+}
+
+#menu:hover .nav__button {
+  background-color: #5A779C;
+  border: 1px solid #5A779C;
+  color: white;
+}

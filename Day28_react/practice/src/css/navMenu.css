@@ -1,0 +1,33 @@
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  
+  padding: 20px;
+}
+
+.menu__info {
+  width: 80%;
+}
+
+.menu__info p{
+  font-size: 0.875rem;
+  color: rgb(158, 158, 158);
+
+}
+
+.menu__info span{
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+/* --- */
+
+#menu:hover {
+  background-color: rgb(240, 240, 240);
+}

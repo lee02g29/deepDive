@@ -1,0 +1,14 @@
+#nav__info {
+  width: 100%;
+
+  margin-bottom: 50px;
+}
+
+.info__title {
+  font-size: 3rem; 
+}
+
+.info__desc {
+  width: 55%;
+  color: rgb(130, 130, 130);
+}
