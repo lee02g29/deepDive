@@ -5,7 +5,7 @@ import {
   useLoaderData,
 } from "react-router-dom";
 import "./App.css";
-import KakaoLogin from "./assets/pages/KakaoLogin";
+import KakaoLogin from "./pages/KakaoLogin";
 
 // 사용자의 정보를 미리 가져오는 컴포넌트
 const Profile = () => {

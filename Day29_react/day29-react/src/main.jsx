@@ -3,9 +3,9 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Contact, { contactAction } from './assets/pages/Contact.jsx'
-import Comments, { commentLoader } from './assets/pages/Comments.jsx'
-import KakaoLogin from './assets/pages/KakaoLogin.jsx'
+import Contact, { contactAction } from './pages/Contact.jsx'
+import Comments, { commentLoader } from './pages/Comments.jsx'
+import KakaoLogin from './pages/KakaoLogin.jsx'
 
 // 라우터 객체 생성
 const router = createBrowserRouter([
