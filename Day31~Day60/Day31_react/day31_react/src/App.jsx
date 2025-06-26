@@ -8,6 +8,7 @@ import LangContext from "./contexts/LangContext";
 import Dashboard from "./components/Dashboard";
 import {AppProvider, useAppContext } from "./contexts/AppProvider";
 import NaverLogin from "./NaverTest/NaverLogin";
+import BlogSearch from "./NaverTest/BlogSearch";
 
 function App() {
   const [user, setUser] = useState("perdy");
@@ -32,11 +33,12 @@ function App() {
     // </UserContext2>
 
     <>
-      <AppProvider>
+      {/* <AppProvider>
         <Dashboard />
-      </AppProvider>
+      </AppProvider> */}
       <h1>로그인하기 </h1>
-      <NaverLogin />
+      {/* <NaverLogin /> */}
+      <BlogSearch />
     </>
   );
 }
