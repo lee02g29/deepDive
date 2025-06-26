@@ -1,7 +1,7 @@
-import Rpg from "./assets/UseReducer/Rpg"
-import Timer from "./assets/UseReducer/Timer"
-import Vote from "./assets/UseReducer/Vote"
-import WaitList from "./assets/UseReducer/waitList"
+import Rpg from "./UseReducer/Rpg"
+import Timer from "./UseReducer/Timer"
+import Vote from "./UseReducer/Vote"
+import WaitList from "./UseReducer/WaitList"
 
 function App() {
 
