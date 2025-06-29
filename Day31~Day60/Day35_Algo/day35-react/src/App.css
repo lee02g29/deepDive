@@ -1,0 +1,14 @@
+/* src/index.css */
+.matrix-table {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.matrix-table th,
+.matrix-table td {
+  border: 1px solid #999;
+  padding: 8px 12px;
+  text-align: center;
+}
+.matrix-table td.connected {
+  background-color: #c8e6c9;
+}
