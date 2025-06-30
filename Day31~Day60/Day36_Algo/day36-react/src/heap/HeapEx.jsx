@@ -54,12 +54,17 @@ export default function HeapEx() {
       // 부모 위치로 이동
       i = parent
 
-      console.log("변경된 배열 : ", arr)
-
     }
+
+    console.log("변경된 배열 : ", arr)
 
     return arr;
   }
+  /*
+    실제 삭제하는 함수
+    부모 -> 자식
+    루트 노드부터 시작해서 자식 노드들과 비교하여 내려가며 자리를 바꿈
+  */
 
   const heapDown = (arr) => {
 
@@ -71,14 +76,13 @@ export default function HeapEx() {
       let right = 2 * i + 2;
       let small = i;
 
-      // 
+      // 왼쪽 자식이 배열 범위 안에 있고, 부모보다 작으면 왼쪽을 가장 작은 노드로 지정
       if(left < length && arr[left] < arr[small]) {
         small = left;
       }
 
-      /*
-        오른쪽 자식이 배
-      */
+
+      // 오른쪽 자식이 배열 범위 안에 있고, small보다 작으면 오른쪽을 가장 작은 노드로 지정
       if(right < length && arr[right] < arr[small]) {
         small = right;
       }
@@ -97,9 +101,9 @@ export default function HeapEx() {
       // 자식으로 내려가서 다시 비교
       i = small;
 
-      return arr;
     }
-
+    
+    return arr;
   }
 
   // 삽입하는 함수
@@ -135,8 +139,8 @@ export default function HeapEx() {
     // 기존 배열을 가져옴
     const newHeap = [...heap];
     const min = newHeap[0];
-    newHeap[0] = newHeap.pop();
-    setHeap(heapDown(newHeap));
+    newHeap[0] = newHeap.pop(); // 마지막 데이터를 루트로 올림
+    setHeap(heapDown(newHeap)); // 정렬
 
     alert(`꺼낸 최소값: ${min}`)
   }

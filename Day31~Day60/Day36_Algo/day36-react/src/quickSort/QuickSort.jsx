@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 
 export default function QuickSort() {
+  // 정렬할 데이터
   const [arr, setArr] = useState([5, 2, 9, 1, 6]);
+
+  // 정렬된 데이터
   const [sorted, setSorted] = useState([]);
 
-  const QuickSort = () => {
+  const QuickSort = (arr) => {
     if(arr.length <= 1) {
       return arr;
     }
@@ -22,13 +25,13 @@ export default function QuickSort() {
     const left = arr.slice(1).filter(v => v < pivot)
     const right = arr.slice(1).filter(v => v > pivot)
 
+    // 다시 배열로 만들고, quickSort 재귀호출을 해서 정렬
     return [...QuickSort(left), pivot, ...QuickSort(right)]
   }
 
   const handleSort = () => {
     const result = QuickSort(arr);
     setSorted(result)
-
 
   }
 
@@ -46,10 +49,10 @@ export default function QuickSort() {
 /*
   퀵 정렬
   - 분할 정복 방식으로 동작하는 알고리즘
-  - 하나의 기준점을 잡고, 기준보다 작으면 왼쪽으로 보내고 크면 오른쪾으로 보냄
+  - 하나의 기준점을 잡고, 기준보다 작으면 왼쪽으로 보내고 크면 오른쪽으로 보냄
   
   - 반복적으로 정렬하는 방식
-    실행할 떄는 자기자신을 호출하는 재귀가 필요함
+    실행할 때는 자기자신을 호출하는 재귀가 필요함
 
   기준점(피벗 pivot)
   자바스크립트, 파이썬에서 sort() 정렬
