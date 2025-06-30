@@ -21,6 +21,8 @@ export default function QuickSort() {
 
     const left = arr.slice(1).filter(v => v < pivot)
     const right = arr.slice(1).filter(v => v > pivot)
+
+    return [...QuickSort(left), pivot, ...QuickSort(right)]
   }
 
   const handleSort = () => {
