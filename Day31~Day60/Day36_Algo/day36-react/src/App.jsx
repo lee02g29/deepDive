@@ -1,4 +1,5 @@
 import HeapEx from "./heap/HeapEx"
+import QuickSort from "./quickSort/QuickSort"
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <h1>알고리즘</h1>
       <HeapEx />
+      <QuickSort />
     </>
   )
 }
