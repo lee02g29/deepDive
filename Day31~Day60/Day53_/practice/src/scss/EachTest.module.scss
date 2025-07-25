@@ -1,0 +1,8 @@
+$tags: h1, h2, h3;
+$colors: #ffadad, #fdffb6, #9bf6ff;
+
+@each $tag, $color in zip($tags, $colors) {
+  .heading-#{$tag} {
+    background-color: $color;
+  }
+}

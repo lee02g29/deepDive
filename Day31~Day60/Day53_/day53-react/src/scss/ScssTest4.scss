@@ -1,0 +1,28 @@
+$theme: dark;
+
+.box { 
+  padding: 1.5rem;
+
+  @if $theme == light {
+    background: white;
+    color: black;
+  }
+  @else if $theme == dark {
+    background-color: #111;
+    color: white;
+  } 
+  @else {
+    background-color: #ccc;
+    color: white;
+  }
+
+}
+
+// @for을 이용해서 map() 스타일을 사용
+@for $num from 1 through 5 {
+  .box-#{$num} {
+    width: 3rem * $num;
+    height: 4rem;
+
+  }
+}

@@ -1,0 +1,29 @@
+// $rainbow: #ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff;
+@use 'sass:list';
+
+$colors: #007a99, #33bcd4, #66e1f5, #9bf6ff;
+
+.card {
+  padding: 1.5rem;
+
+  background-color: #111;
+  color: white;
+
+}
+
+@for $num from 1 through 4 {
+  .card-#{$num} {
+    width: 5rem * $num;
+    height: 2rem;
+    text-align: center;
+    background-color: list.nth($colors, $num);
+  }
+}
+
+/*
+scss 3.0.0부터
+전역 내장 함수 Deprecation됨.
+
+기존의 nth() 함수 대신 list.nth() 함수를 사용하여 리스트의 특정 요소를 접근해야 함
+list.nth -> @use 'sass:list';필요
+*/

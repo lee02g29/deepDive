@@ -1,0 +1,49 @@
+/*
+  Mixin
+  - 재사용 가능한 스타일 목록
+  - 자바스크립트에서 함수처럼 필요한 곳에 @include로 불러와서 사용
+  - 미리 저장해놓은 블럭
+
+  &란
+  - 바깥 부모 셀렉터 자체를 가리키는 기호
+  - 부모 css를 가리킴
+  
+  파일명.module.scss
+  - 모듈 방식으로 변경했을 때는 일반 css가 먹히지 않음
+  - css 클래스 이름이 일반 문자열이 아니라, 자바스크립트의 객체로 import됨
+  - 각 클래스 명이 고유하게 변형된 값ㄱ으로 매체되기 때문에, 이름 충돌이 없고 안전하게 사용할 수 있음
+    -> 실무에서 많이 사용하게 됨
+  - styles 객체에 저장됨
+*/
+
+@mixin button-style($bg-color) {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: $bg-color;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn{
+  font-size: 1rem;
+  margin-right: 16px;
+}
+
+.primary {
+  @include button-style(#3498db)
+}
+
+.danger {
+  @include button-style(#e74c3c)
+}
+
+.wrapper {
+  padding: 2.5rem;
+  text-align: center;
+  background-color: #CCC;
+}

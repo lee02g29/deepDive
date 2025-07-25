@@ -1,0 +1,12 @@
+/* SCSS와 SASS */
+
+/* $main-color: pink
+
+.button {
+  background-color: pink;
+  padding: 10px;
+
+  &:hover {
+    background-color: : darken($main-color);
+  } 
+} */

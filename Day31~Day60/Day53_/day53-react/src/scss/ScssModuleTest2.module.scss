@@ -1,0 +1,23 @@
+
+/* 
+  상속 Extend 
+  - scss에서 강력한 기능 중에 하나
+  - 기존 클래스의 스타일을 그대로 가져와서 다른 클래스에서도 쓸 수 있도록 상속하는 기능
+  - @extend
+
+  scss의 상속
+  - 스타일 복사 붙여넣기를 자동으로 해주는 도구
+*/
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-primary {
+  @extend .btn;
+  background-color: #3498db;
+  color:white;
+}

@@ -1,0 +1,11 @@
+/*
+  변수를 이용해서 scss
+  변수를 만들때는 $
+*/
+
+$title-color: orange;
+
+.title {
+  color: $title-color;
+  font-size: 2rem;
+}

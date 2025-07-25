@@ -1,0 +1,37 @@
+/*
+  scss 공통적인 스타일 적용
+  $padding-lg: 2rem;
+  $padding-md: 1rem;
+  $padding-sm: 0.5rem;
+
+  공통된 폰트, 반응형 너비 등
+  $container-width: 1200px
+  $mobile-width: 768px;
+  $tablet-width: 1024px;
+*/
+
+
+.card{
+  background-color: white;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    color: gray;
+  }
+}
+
+/*
+  스타일이 계층 구조로 논리적으로 묶이기 때문에 유지보수나 구조 이해가 쉬움
+  -> 실제 실무에서 많이 사용하기 좋음
+
+  중첩은 부모 태그와 자식 태그가 시각적으로 정리해서 한눈에 보기 쉽게 만들어줌
+
+  위 코드처럼 쓰지 않으면 코드에 문제가 발생할 수 있음
+  - 클래스 이름이 길어지고 반복됨
+  - 스타일 간 관계가 눈에 안 잘 보임
+  - 유지 보수가 불편함
+  
+*/
