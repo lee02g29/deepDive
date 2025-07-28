@@ -1,0 +1,24 @@
+.card {
+  background-color: #eee;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-info {
+  background-color: #3bb4e4;
+  color: white;
+}
+
+.card-success {
+  background-color: aquamarine;
+  color: #020721;
+}
+
+.card-warning {
+  background-color: pink;
+  color: beige;
+}

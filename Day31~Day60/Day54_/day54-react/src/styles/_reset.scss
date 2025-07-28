@@ -1,0 +1,15 @@
+/*
+  브라우저마다 기본으로 제공하는 여백, 패딩, 폰트 사이즈,
+  해딩 태그등 스타일의 차이를 제거해서 모든 요소가 동일한 초기 상태에서 시작
+
+  modern-css-reset
+  post css 플러그인, normalize, sanitize.css 등
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+
+  // 너비, 높이 계산시 테두리와 패딩 포함
+  box-sizing: border-box;
+}

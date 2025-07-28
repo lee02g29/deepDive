@@ -1,0 +1,25 @@
+@use './variables';
+
+
+/* 
+  mixin을 통해 중복적인 내용 제거 및 코드 간결화 
+  -> 유지보수가 용이하고 가독성이 향상됨 
+  
+  _mixins.scss 파일로 자주 쓰는 스타일을 모듈화 + @mixin + @include 조합으로 코드 간결화
+*/
+
+/* 
+  기본적으로 가로 방향
+  @include 해서 부를 때
+  @include flex-center 기본 가로방향 row
+  @include flex-center(column) 기본 가로방향 column
+  $content:center 기본값 설정해서 사용
+
+*/
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+  padding: variables.$padding-base
+}

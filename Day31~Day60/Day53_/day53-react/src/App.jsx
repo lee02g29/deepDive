@@ -25,7 +25,7 @@ export default App
 
 /*
   SCSS
-  - CSS의 확장문접
+  - CSS의 확장문법
   - 기존 CSS 문법을 그대로 사용하면서 변수, 중첩, 조건, 반복 믹스인 같은 프로그래밍 적
   기능을 추가할 수 있음
   - 확장자 .scss 확장자를 사용
@@ -47,9 +47,9 @@ export default App
   
   리액트에서는 보통 SCSS를 많이 사용
   
-  외부 라이브러리 퍼함
+  외부 라이브러리 포함
   npm install -D sass
 
-  saas 라이브러리 안에 scss파일을 css로 컵파일하는 도구가 있음
+  saas 라이브러리 안에 scss파일을 css로 컴파일하는 도구가 있음
 
 */

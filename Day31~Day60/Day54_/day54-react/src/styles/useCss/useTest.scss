@@ -1,0 +1,22 @@
+@use './colors';
+
+.button {
+  background-color: colors.$primary-color;
+}
+
+.alert {
+  color: colors.$danger-color;
+}
+
+/*
+  - scss/css 안붙여도 됨
+
+  변수 @use '경로/파일명'
+  - 파일명.$변수명
+
+  믹스인 @use '경로/파일명'
+  - @include 파일명.mixin()
+
+  함수명 @use '경로/파일명'
+  - 파일명.function();
+*/

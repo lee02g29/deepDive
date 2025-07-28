@@ -1,0 +1,72 @@
+@use '../../styles/mixins' as mixins;
+@use '../../styles/variables' as vars;
+
+.card {
+  @include mixins.flex-center(column);
+  border: 1px solid vars.$primary-color;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  background-color: #ccc;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: vars.$primary-color;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.level {
+  background-color: #ddd;
+  border-radius: 10px;
+  padding: 5px
+}
+
+@media(max-width: 768px) {
+  .card{
+    width: 100%;
+  }
+}
+
+/*
+  @use 별칭 or 경로 명으로 접근할 수 있도록 설정
+  @import를 사용하면 네이밍 충돌이 발생할 수 있어서 @use 권장
+*/
+
+// @use '../../styles/variables.scss' as vars;
+// @use '../../styles/mixins.scss' as mixins;
+
+// .card {
+//   @include mixins.flex-center(column);
+
+//   border: vars.$card-border;
+//   border-radius: vars.$card-radius;
+//   padding: vars.$padding-base;
+//   width: vars.$card-width;
+//   text-align: center;
+//   background-color: vars.$card-bg-color;
+//   transition: transform vars.$card-transition-time ease;
+
+//   &:hover {
+//     // 음수일 경우에는 -를 붙여서 음수로 만들기
+//     transform: translateY(-vars.$card-hover-offset);
+//   }
+// }
