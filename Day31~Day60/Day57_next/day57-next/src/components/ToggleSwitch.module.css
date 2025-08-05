@@ -1,0 +1,16 @@
+/* 파일명: ToggleSwitch.module.css */
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+  margin: 1rem;
+}
+.on {
+  background-color: #22c55e;
+  color: #ffffff;
+}
+.off {
+  background-color: #d1d5db;
+  color: #000000;
+}

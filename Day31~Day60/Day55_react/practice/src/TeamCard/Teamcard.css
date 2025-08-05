@@ -1,0 +1,48 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  border: 1px solid #3498db;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  background-color: #eee;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.level {
+  background-color: #ddd;
+  border-radius: 10px;
+  padding: 5px
+}
+
+@media(max-width: 768px) {
+  .card{
+    width: 100%;
+  }
+}
